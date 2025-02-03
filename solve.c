@@ -81,7 +81,6 @@ double Solve_Bisect(
     }
 }  // Solve_Bisect
 
-
 //
 // Solve_Get_Df
 double Solve_Get_Df(double (*func)(double), double x_old) {
@@ -99,7 +98,6 @@ double Solve_Get_Df(double (*func)(double), double x_old) {
     df /= 2.0*h;
     return df;
 }  // Solve_Get_Df
-
 
 //
 // Solve_Newton

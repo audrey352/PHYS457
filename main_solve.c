@@ -29,7 +29,7 @@ int main(void) {
     fprintf(stdout, "x = %e\n", x);
     
     return 1;
-    }
+}  // main
 
 // Define the function to test
 double f_solve(double x) {
