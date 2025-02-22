@@ -39,4 +39,5 @@ y_1
 nmax  
 ```  
 
-For testing purposes, an additional Jupyter Notebook is provided to plot the results from numerov_test.
+For testing purposes, an additional Jupyter Notebook is provided to plot the results 
+from numerov_test alongside the corresponding input file `params_test.txt`.
