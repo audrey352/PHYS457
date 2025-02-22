@@ -39,4 +39,4 @@ y_1
 nmax  
 ```  
 
-For testing purposes, an additional python script is provided to plot the results from numerov_test
+For testing purposes, an additional Jupyter Notebook is provided to plot the results from numerov_test.
