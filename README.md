@@ -1,18 +1,42 @@
 # PHYS457 - Honours Quantum II
 Audréanne Bernier (261100643)
 
-## How to Compile and Run
-To compile all files, run the following command in the terminal:
+## **How to Compile and Run**  
 
-$ make
+### **Compiling the Code**  
+To compile all files, run the following command in the terminal:  
 
-To compile only parts of the code, you can specify these options: solve_test, deriv_test, and/or extremum_test
+```sh
+make
+```
 
+To compile only specific parts of the code, use:  
 
-Then, to test the scripts, run
+```sh
+make solve_test
+make deriv_test
+make extremum_test
+make numerov_test
+```  
 
-$ ./solve_test
+### **Running the Tests**  
+After compiling, you can run the test scripts with:  
 
-$ ./deriv_test
+```sh
+./solve_test
+./deriv_test
+./extremum_test
+./numerov_test filename
+```  
 
-$ ./extremum_test
+where `filename` is the input file containing the parameters, formatted as:  
+
+```
+x_i  
+x_f  
+y_0  
+y_1  
+nmax  
+```  
+
+For testing purposes, an additional python script is provided to plot the results from numerov_test
