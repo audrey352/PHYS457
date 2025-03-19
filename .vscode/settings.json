@@ -1,5 +1,10 @@
 {
     "files.associations": {
-        "vector_mtx.h": "c"
+        "vector_mtx.h": "c",
+        "numerov_params.h": "c",
+        "init.h": "c",
+        "extremum.h": "c",
+        "radial_eq_functions.h": "c",
+        "derivatives.h": "c"
     }
 }
