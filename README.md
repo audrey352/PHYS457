@@ -59,17 +59,25 @@ nmax_backward
 ``` 
 
 
-### **Input and Output Files** 
-The output from deriv_test is contained in the file `deriv_test.dat`.
+## **Input and Output Files** 
 
-`params_test.txt` is an example file that can be used when running numerov_test. The sript 
-outputs two files: `params.dat` where the read-in data is recorded, and `y.dat` which 
-contains the resulting y values from the Numerov method.
+### **deriv_test**
+
+Output: `deriv_test.dat`
+
+### **numerov_test**
+
+Input: `params_test.txt` is an example file that can be used when running numerov_test. 
+
+Output: `params.dat` (where the read-in data is recorded) and `y.dat` (contains the 
+resulting y values from the Numerov method).
 
 For testing purposes, an additional Jupyter Notebook `numerov_plot.ipynb`is provided to 
 plot the results from numerov_test  stored in `y.dat`.
 
-`input_coulomb.txt` and `input_n_params.txt` are example files that can be used respectively as `input_file1`and `input_file2` 
-when running schrodinger_test.
+### **schrodinger_test**
 
-The output to schrodinger_test is a file called `num_params.dat`.
+Input: `input_coulomb.txt` and `input_n_params.txt` are example files that can be used 
+respectively as `input_file1`and `input_file2` when running schrodinger_test.
+
+Output: `num_params.dat`
