@@ -32,7 +32,6 @@ void Init_CalcScales(void) {
         PARAM_DATA.Ea = fabs(E_min);
     }
     else {  // Nuclear potential
-        // Next section
         PARAM_DATA.r0 = 1.3*pow(PARAM_DATA.nucA, 1.0/3.0); // Nuclear radius
         PARAM_DATA.Ea = 50.0/hbarc; // about 50 MeV
     }

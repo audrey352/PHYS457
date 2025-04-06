@@ -26,12 +26,15 @@ typedef struct params{
 
 typedef struct dynamic_vars{
     double Eb; // Absolute value of the bound energy
-    double kb; // sqrt(2*mass*Eb)
+    double kb; // New
     double rc; // The turning point radius
     double Et; // Eb/Ea
     double xc; // ka*rc
-    double rf; // The last point
-    double xf; // xf = ka*rf.
+    double rf;
+    double xf;
+    // To bracket the energy eigenvalue search
+    double Et_min;
+    double Et_max;
 } DynamicVars;
 
 extern Params PARAM_DATA; // Run specific data

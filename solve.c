@@ -20,7 +20,7 @@ double Solve_Bisect(
     // Declare variables and initialize counts
     double x_mid, f_max, f_min, f_mid, err;
     int count_max;
-    count_max = 1000; // Large enough.
+    count_max = 30; // Large enough.
     *count += 1; // Keep track of the number of iterations.
 
     // Check current count, exit if too large
@@ -68,16 +68,11 @@ double Solve_Bisect(
     } 
     else if(f_min*f_mid < 0.0) {  // the solution is between x_min and x_mid
         return Solve_Bisect(nu, func, x_min, x_mid, tol, count);
-    } else { // one of the factors is zero
-        if (f_mid == 0.0) {
-            return x_mid;
-        }
-        else if (f_max == 0.0) {
-            return x_max;
-        }
-        else {
-            return x_min;
-        }
+    } 
+    else { // one of the factors is zero
+        if (f_mid == 0.0) {return x_mid;}
+        else if (f_max == 0.0) {return x_max;}
+        else {return x_min;}
     }
 }  // Solve_Bisect
 
