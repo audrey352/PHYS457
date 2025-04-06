@@ -51,6 +51,8 @@ mass_unit
 l  
 nucA  
 nucZ
+Emin
+Emax
 ``` 
 
 and `input_file2` contains the Numerov parameters formatted as:
